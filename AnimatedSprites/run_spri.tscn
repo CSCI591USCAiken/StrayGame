@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ck8h0crcms47l"]
+
+[ext_resource type="Texture2D" uid="uid://n0hnqi26c4sm" path="res://11-5.png" id="1_ksagc"]
+[ext_resource type="Texture2D" uid="uid://b5icpt15l3r2y" path="res://11-5-3.png" id="2_b3iae"]
+[ext_resource type="Texture2D" uid="uid://cjioyw84t40v4" path="res://11-5-1.png" id="3_1hm2m"]
+[ext_resource type="Texture2D" uid="uid://csswua62m245p" path="res://11-5-2.png" id="4_brfyy"]
+[ext_resource type="Texture2D" uid="uid://in5cuadmkjd5" path="res://11-5-4.png" id="5_052qr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xypg8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ksagc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_b3iae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1hm2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_brfyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_052qr")
+}],
+"loop": 1,
+"name": &"11-5D-Run",
+"speed": 12.0
+}]
+
+[node name="RunSpri" type="AnimatedSprite2D" unique_id=591014311]
+scale = Vector2(0.90268886, 0.87843704)
+sprite_frames = SubResource("SpriteFrames_xypg8")
+animation = &"11-5D-Run"
