@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://c7a43cnkebq6f"]
+
+[ext_resource type="Script" uid="uid://dqmhwnifm1sdy" path="res://scripts/solid.gd" id="1_it0vx"]
+[ext_resource type="PackedScene" uid="uid://db1e0rbfi2tg8" path="res://objects/maindoor.tscn" id="2_pshal"]
+[ext_resource type="PackedScene" uid="uid://drbef1xu8nyng" path="res://objects/mainplayer.tscn" id="3_4au1y"]
+[ext_resource type="PackedScene" uid="uid://b4853tw5jc1bv" path="res://objects/mainspikes.tscn" id="4_soer1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wr7su"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ykv3"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0x8l"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oxagl"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wh23k"]
+size = Vector2(180, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ok2j"]
+size = Vector2(118, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jbgza"]
+size = Vector2(46, 17)
+
+[node name="Room2" type="Node2D" unique_id=548332743]
+
+[node name="Level" type="Node2D" parent="." unique_id=1900556315]
+
+[node name="Floor" type="StaticBody2D" parent="Level" unique_id=495845014]
+position = Vector2(576, 632)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Floor" unique_id=1678458993]
+shape = SubResource("RectangleShape2D_wr7su")
+
+[node name="Ceiling" type="StaticBody2D" parent="Level" unique_id=1596818583]
+position = Vector2(576, 16)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Ceiling" unique_id=74938901]
+shape = SubResource("RectangleShape2D_5ykv3")
+
+[node name="LeftWall" type="StaticBody2D" parent="Level" unique_id=876999935]
+position = Vector2(16, 324)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/LeftWall" unique_id=552204200]
+shape = SubResource("RectangleShape2D_t0x8l")
+
+[node name="RightWall" type="StaticBody2D" parent="Level" unique_id=545359489]
+position = Vector2(1136, 324)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/RightWall" unique_id=1193976540]
+shape = SubResource("RectangleShape2D_oxagl")
+
+[node name="Platform" type="StaticBody2D" parent="Level" unique_id=1322802404]
+position = Vector2(900, 480)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Platform" unique_id=979681585]
+shape = SubResource("RectangleShape2D_wh23k")
+
+[node name="Platform2" type="StaticBody2D" parent="Level" unique_id=86124394]
+position = Vector2(640, 370)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Platform2" unique_id=1744170664]
+shape = SubResource("RectangleShape2D_6ok2j")
+
+[node name="Platform4" type="StaticBody2D" parent="Level" unique_id=633405789]
+position = Vector2(640, 370)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Platform4" unique_id=892685425]
+position = Vector2(-579, -63)
+shape = SubResource("RectangleShape2D_6ok2j")
+
+[node name="Platform3" type="StaticBody2D" parent="Level" unique_id=1881861239]
+position = Vector2(370, 275)
+script = ExtResource("1_it0vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Platform3" unique_id=600168329]
+position = Vector2(-82, 52.5)
+shape = SubResource("RectangleShape2D_jbgza")
+
+[node name="Door" parent="." unique_id=548242032 instance=ExtResource("2_pshal")]
+position = Vector2(69, 251)
+target_scene = "uid://ds0423jwogalv"
+
+[node name="Player" parent="." unique_id=2131476305 instance=ExtResource("3_4au1y")]
+position = Vector2(1044, 591)
+
+[node name="Spikes" parent="." unique_id=1191296828 instance=ExtResource("4_soer1")]
+position = Vector2(491, 606)
+width = 900.0
