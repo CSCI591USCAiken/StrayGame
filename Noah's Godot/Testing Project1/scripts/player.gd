@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@onready var anim = $AnimatedSprite2D
 # This is the script that allows the player to exist. :D
 
 # Each of these vars are parts that can be edited through the inspector.

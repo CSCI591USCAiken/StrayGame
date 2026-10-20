@@ -1,0 +1,5 @@
+res://objects/mainspikes.tscn
+res://level scenes/blueblock.tres
+res://level scenes/main.tscn
+res://level scenes/virtual_joy_stick.gd
+res://scripts/player.gd

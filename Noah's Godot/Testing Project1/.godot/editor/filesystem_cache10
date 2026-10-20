@@ -1,0 +1,31 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792474720
+::res://art/::1792466805
+Player1.png::CompressedTexture2D::3340699864010075508::1792466722::1792466805::1::::<><><>0<>0<>db79cdbf060126d8fcc713368d670196<>res://.godot/imported/Player1.png-94ad7c188b2ff033d11401d48458019b.ctex::
+Player2.png::CompressedTexture2D::1273591423134475595::1792466722::1792466805::1::::<><><>0<>0<>8249a6937606ed2b2ef53ad4157b49fb<>res://.godot/imported/Player2.png-304a678347015c049a0a300a6e9d0aaf.ctex::
+::res://level scenes/::1792474250
+backgroung-static.jpg::CompressedTexture2D::1243223811635409608::1792466722::1792468544::1::::<><><>0<>0<>e26d26ad3aa449bd274be7588bd158fb<>res://.godot/imported/backgroung-static.jpg-dd45ce84672a1844f23821e4c63e245c.ctex::
+base.png::CompressedTexture2D::2986042547591886052::1792472972::1792473031::1::::<><><>0<>0<>7559d23be3bc362ef99fb262772938d3<>res://.godot/imported/base.png-6d8b5ee98c161e224247bd19bc9cb92b.ctex::
+knot.jpg::CompressedTexture2D::2528071039104118351::1792473025::1792473031::1::::<><><>0<>0<>73d7284e6f7af6d2da6e3a65a80a1a13<>res://.godot/imported/knot.jpg-f786a47fc300cd8700bd1dab3d650c25.ctex::
+main.tscn::PackedScene::8476081175216608155::1792473507::0::1::::<><><>0<>0<><>::uid://ryhykakammo3::::res://level scenes/backgroung-static.jpg<>uid://b4853tw5jc1bv::::res://objects/mainspikes.tscn<>uid://bgsc87gaaobyc::::res://level scenes/blueblock.tres<>uid://db1e0rbfi2tg8::::res://objects/maindoor.tscn<>uid://bgcpoul84yaby::::res://level scenes/virtual_joy_stick.gd<>uid://bispxjjkb165m::::res://level scenes/base.png<>uid://drbef1xu8nyng::::res://objects/mainplayer.tscn<>uid://bcau7wrygu4p4::::res://level scenes/knot.jpg
+blueblock.tres::GradientTexture2D::2844894600295349158::1792471727::0::1::::<><><>0<>0<><>::
+virtual_joy_stick.gd::GDScript::2812619326034497962::1792474250::0::1::::<>Control<><>0<>0<><>::
+room2.tscn::PackedScene::7020695284411719083::1792466722::0::1::::<><><>0<>0<><>::uid://dqmhwnifm1sdy::::res://scripts/solid.gd<>uid://db1e0rbfi2tg8::::res://objects/maindoor.tscn<>uid://drbef1xu8nyng::::res://objects/mainplayer.tscn<>uid://b4853tw5jc1bv::::res://objects/mainspikes.tscn
+::res://objects/::1792468225
+maindoor.tscn::PackedScene::7283413123822286065::1792466722::0::1::::<><><>0<>0<><>::uid://bg8lqk3cr67y2::::res://scripts/door.gd
+mainplayer.tscn::PackedScene::8354789969711455832::1792466722::0::1::::<><><>0<>0<><>::uid://dmajkkjukbugc::::res://scripts/player.gd<>uid://bnui3rrnpofa7::::res://art/Player1.png<>uid://se64ns17nvy6::::res://art/Player2.png
+mainspikes.tscn::PackedScene::4491894160396892159::1792468225::0::1::::<><><>0<>0<><>::uid://7ulx4ut2htg3::::res://scripts/hazard.gd
+::res://PlayerAnimation/::1792474790
+11-5-1.png::CompressedTexture2D::5383361634980433580::1792466649::1792474803::1::::<><><>0<>0<>9d7c5376194115d4b0f77992a5f5d280<>res://.godot/imported/11-5-1.png-02b43c085d33af15f222336cc7f620ef.ctex::
+11-5-2.png::CompressedTexture2D::2747218858339681211::1792466649::1792474803::1::::<><><>0<>0<>ae577df38856ad8427ad0a658e88f22a<>res://.godot/imported/11-5-2.png-4d2464fc0210367bba9af2621d29bcb8.ctex::
+11-5-3.png::CompressedTexture2D::5514488106877679846::1792466649::1792474803::1::::<><><>0<>0<>0de30509db0a99b21917ae9c6016d06b<>res://.godot/imported/11-5-3.png-ceda239effcd32c2e0dbfecb1494ca2b.ctex::
+11-5-4.png::CompressedTexture2D::7402071462489296572::1792466649::1792474803::1::::<><><>0<>0<>62b4242b4838c1e273496897938cf099<>res://.godot/imported/11-5-4.png-7a0a80f44a12c3cf81df1c070c22b9ce.ctex::
+11-5.png::CompressedTexture2D::636356384976863518::1792466649::1792474803::1::::<><><>0<>0<>596fe2c81596073f4d0aad1d6e149b5c<>res://.godot/imported/11-5.png-6687dbce6556b405ac09e43ac0d4ae1f.ctex::
+sub 11-5s-2 (20261006021053).png::CompressedTexture2D::4644229299509300949::1792466649::1792474803::1::::<><><>0<>0<>5119cd6417d30e9a19bb7c77140a56f5<>res://.godot/imported/sub 11-5s-2 (20261006021053).png-5bef0a9ba22018d7e4039117a4251e9b.ctex::
+sub 11-5s-6 (20261007013637).png::CompressedTexture2D::148390580743670747::1792466649::1792474803::1::::<><><>0<>0<>966047e6fe8fff8776d2b1a699cc30ca<>res://.godot/imported/sub 11-5s-6 (20261007013637).png-350816f0916e5fd993c885dcae4ef5b6.ctex::
+::res://scripts/::1792466722
+door.gd::GDScript::2876375239631047315::1792466722::0::1::::<>Area2D<><>0<>1<><>::
+hazard.gd::GDScript::2288041066651369468::1792466722::0::1::::<>Area2D<><>0<>1<><>::
+player.gd::GDScript::8002093025668514566::1792466722::0::1::::<>CharacterBody2D<><>0<>0<><>::
+solid.gd::GDScript::8307521084158054774::1792466722::0::1::::<>StaticBody2D<><>0<>1<><>::
+world.gd::GDScript::8108003128003926112::1792466722::0::1::::<>Node<><>0<>0<><>::

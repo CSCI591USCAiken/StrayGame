@@ -1,0 +1,8 @@
+AnimatedSprite2D
+TextureRect
+Control
+TouchScreenButton
+CanvasLayer
+Sprite2D
+ColorRect
+TileMapLayer
