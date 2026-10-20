@@ -1,0 +1,195 @@
+[gd_scene format=3 uid="uid://uq3xk55qhvwv"]
+
+[ext_resource type="Script" uid="uid://dqmhwnifm1sdy" path="res://scripts/solid.gd" id="1_8swlu"]
+[ext_resource type="Texture2D" uid="uid://dtfk54gsxqxld" path="res://art/Backgrounds/Background1.png" id="1_t7sut"]
+[ext_resource type="PackedScene" uid="uid://db1e0rbfi2tg8" path="res://objects/maindoor.tscn" id="2_t7sut"]
+[ext_resource type="PackedScene" uid="uid://drbef1xu8nyng" path="res://objects/mainplayer.tscn" id="3_sju4i"]
+[ext_resource type="PackedScene" path="res://objects/mainplatform.tscn" id="4_sglcd"]
+[ext_resource type="PackedScene" uid="uid://b4853tw5jc1bv" path="res://objects/mainspikes.tscn" id="5_rcsr3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m53r"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0v7bq"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1b45c"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yt1jk"]
+size = Vector2(32, 648)
+
+[node name="Main" type="Node2D" unique_id=1508134922]
+
+[node name="Background1" type="Sprite2D" parent="." unique_id=1925189497]
+position = Vector2(559.75, 345.875)
+scale = Vector2(0.8263334, 0.8297102)
+texture = ExtResource("1_t7sut")
+
+[node name="Level" type="Node2D" parent="." unique_id=1669553621]
+
+[node name="Floor" type="StaticBody2D" parent="Level" unique_id=719721118]
+position = Vector2(576, 632)
+script = ExtResource("1_8swlu")
+width = 1152.0
+height = 32.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Floor" unique_id=2097573032]
+shape = SubResource("RectangleShape2D_0m53r")
+
+[node name="Ceiling" type="StaticBody2D" parent="Level" unique_id=843967780]
+position = Vector2(576, 16)
+script = ExtResource("1_8swlu")
+width = 1152.0
+height = 32.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Ceiling" unique_id=257053317]
+shape = SubResource("RectangleShape2D_0v7bq")
+
+[node name="LeftWall" type="StaticBody2D" parent="Level" unique_id=1946732893]
+position = Vector2(16, 324)
+script = ExtResource("1_8swlu")
+width = 32.0
+height = 648.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/LeftWall" unique_id=154908171]
+shape = SubResource("RectangleShape2D_1b45c")
+
+[node name="RightWall" type="StaticBody2D" parent="Level" unique_id=317737456]
+position = Vector2(1136, 324)
+script = ExtResource("1_8swlu")
+width = 32.0
+height = 648.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/RightWall" unique_id=1876539312]
+shape = SubResource("RectangleShape2D_yt1jk")
+
+[node name="Door" parent="." unique_id=548242032 instance=ExtResource("2_t7sut")]
+position = Vector2(1010, 572)
+target_scene = "uid://ds0423jwogalv"
+
+[node name="Player" parent="." unique_id=2131476305 instance=ExtResource("3_sju4i")]
+position = Vector2(118, 592)
+
+[node name="Platform" parent="." unique_id=1306869089 instance=ExtResource("4_sglcd")]
+position = Vector2(308, 400)
+width = 55.0
+height = 469.0
+
+[node name="Platform5" parent="." unique_id=967239100 instance=ExtResource("4_sglcd")]
+position = Vector2(564, 251)
+width = 55.0
+height = 469.0
+
+[node name="Platform6" parent="." unique_id=1187469705 instance=ExtResource("4_sglcd")]
+position = Vector2(867, 396)
+width = 55.0
+height = 469.0
+
+[node name="Platform2" parent="." unique_id=1961738299 instance=ExtResource("4_sglcd")]
+position = Vector2(252, 416)
+width = 156.0
+height = 26.0
+
+[node name="Platform3" parent="." unique_id=1955103274 instance=ExtResource("4_sglcd")]
+position = Vector2(59, 211)
+width = 72.0
+height = 26.0
+
+[node name="Platform4" parent="." unique_id=1246652724 instance=ExtResource("4_sglcd")]
+position = Vector2(233, 211)
+width = 104.0
+height = 26.0
+
+[node name="Platform7" parent="." unique_id=1243604055 instance=ExtResource("4_sglcd")]
+position = Vector2(646, 378)
+width = 62.0
+height = 14.0
+
+[node name="Platform8" parent="." unique_id=451793585 instance=ExtResource("4_sglcd")]
+position = Vector2(647, 261)
+width = 62.0
+height = 14.0
+
+[node name="Platform9" parent="." unique_id=1042311860 instance=ExtResource("4_sglcd")]
+position = Vector2(646, 157)
+width = 62.0
+height = 14.0
+
+[node name="Platform10" parent="." unique_id=997781280 instance=ExtResource("4_sglcd")]
+position = Vector2(805, 190)
+width = 136.0
+height = 14.0
+
+[node name="Spikes3" parent="." unique_id=1048991398 instance=ExtResource("5_rcsr3")]
+position = Vector2(788, 208)
+rotation = 3.1415927
+width = 100.0
+
+[node name="Platform11" parent="." unique_id=225372624 instance=ExtResource("4_sglcd")]
+position = Vector2(804, 302)
+width = 136.0
+height = 14.0
+
+[node name="Platform13" parent="." unique_id=39763185 instance=ExtResource("4_sglcd")]
+position = Vector2(915, 370)
+rotation = 0.7853982
+width = 136.0
+height = 14.0
+
+[node name="Platform15" parent="." unique_id=1947985399 instance=ExtResource("4_sglcd")]
+position = Vector2(38.999985, 335.00003)
+rotation = 0.7853982
+width = 62.0
+height = 14.0
+
+[node name="Platform14" parent="." unique_id=1654179438 instance=ExtResource("4_sglcd")]
+position = Vector2(1100, 369)
+rotation = -0.7853982
+width = 136.0
+height = 14.0
+
+[node name="Spikes4" parent="." unique_id=1999579713 instance=ExtResource("5_rcsr3")]
+position = Vector2(787, 320)
+rotation = 3.1415927
+width = 100.0
+
+[node name="Platform12" parent="." unique_id=1158723259 instance=ExtResource("4_sglcd")]
+position = Vector2(803, 427)
+width = 136.0
+height = 14.0
+
+[node name="Spikes5" parent="." unique_id=1309689062 instance=ExtResource("5_rcsr3")]
+position = Vector2(786, 445)
+rotation = 3.1415927
+width = 100.0
+
+[node name="Spikes9" parent="." unique_id=129800589 instance=ExtResource("5_rcsr3")]
+position = Vector2(227, 439)
+rotation = 3.1415927
+width = 100.0
+
+[node name="Spikes6" parent="." unique_id=43938669 instance=ExtResource("5_rcsr3")]
+position = Vector2(829, 537)
+rotation = -1.5707964
+width = 150.0
+
+[node name="Spikes7" parent="." unique_id=1884589975 instance=ExtResource("5_rcsr3")]
+position = Vector2(1079, 366)
+rotation = -0.7853982
+width = 100.0
+
+[node name="Spikes8" parent="." unique_id=241052431 instance=ExtResource("5_rcsr3")]
+position = Vector2(935.0001, 366.00003)
+rotation = 0.7853982
+width = 100.0
+
+[node name="Spikes10" parent="." unique_id=435774707 instance=ExtResource("5_rcsr3")]
+position = Vector2(54.999985, 327.00003)
+rotation = 0.7853982
+width = 50.0
+
+[node name="Spikes2" parent="." unique_id=1502737596 instance=ExtResource("5_rcsr3")]
+position = Vector2(602, 256)
+rotation = 1.5707964
+width = 450.0
