@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/solid.gd" id="1_phbn8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8flqo"]
+resource_local_to_scene = true
+size = Vector2(180, 24)
+
+[node name="Platform" type="StaticBody2D"]
+script = ExtResource("1_phbn8")
+width = 180.0
+height = 24.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8flqo")

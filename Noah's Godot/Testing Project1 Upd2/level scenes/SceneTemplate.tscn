@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cpske14vx81u7"]
+
+[ext_resource type="Script" uid="uid://dqmhwnifm1sdy" path="res://scripts/solid.gd" id="1_jp8up"]
+[ext_resource type="PackedScene" uid="uid://db1e0rbfi2tg8" path="res://objects/maindoor.tscn" id="2_q5tkk"]
+[ext_resource type="PackedScene" uid="uid://drbef1xu8nyng" path="res://objects/mainplayer.tscn" id="3_n20x5"]
+[ext_resource type="PackedScene" path="res://objects/mainplatform.tscn" id="4_tsbo1"]
+[ext_resource type="PackedScene" uid="uid://b4853tw5jc1bv" path="res://objects/mainspikes.tscn" id="5_g6urq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1orp"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dv2cr"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2ans"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed2re"]
+size = Vector2(32, 648)
+
+[node name="Main" type="Node2D" unique_id=1508134922]
+
+[node name="Level" type="Node2D" parent="." unique_id=1669553621]
+
+[node name="Floor" type="StaticBody2D" parent="Level" unique_id=719721118]
+position = Vector2(576, 632)
+script = ExtResource("1_jp8up")
+width = 1152.0
+height = 32.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Floor" unique_id=2097573032]
+shape = SubResource("RectangleShape2D_m1orp")
+
+[node name="Ceiling" type="StaticBody2D" parent="Level" unique_id=843967780]
+position = Vector2(576, 16)
+script = ExtResource("1_jp8up")
+width = 1152.0
+height = 32.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Ceiling" unique_id=257053317]
+shape = SubResource("RectangleShape2D_dv2cr")
+
+[node name="LeftWall" type="StaticBody2D" parent="Level" unique_id=1946732893]
+position = Vector2(16, 324)
+script = ExtResource("1_jp8up")
+width = 32.0
+height = 648.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/LeftWall" unique_id=154908171]
+shape = SubResource("RectangleShape2D_x2ans")
+
+[node name="RightWall" type="StaticBody2D" parent="Level" unique_id=317737456]
+position = Vector2(1136, 324)
+script = ExtResource("1_jp8up")
+width = 32.0
+height = 648.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/RightWall" unique_id=1876539312]
+shape = SubResource("RectangleShape2D_ed2re")
+
+[node name="Door" parent="." unique_id=548242032 instance=ExtResource("2_q5tkk")]
+position = Vector2(1010, 572)
+target_scene = "uid://c7a43cnkebq6f"
+
+[node name="Player" parent="." unique_id=2131476305 instance=ExtResource("3_n20x5")]
+position = Vector2(118, 592)
+
+[node name="Platform" parent="." unique_id=208284859 instance=ExtResource("4_tsbo1")]
+position = Vector2(1294, 278)
+
+[node name="Spikes" parent="." unique_id=1191296828 instance=ExtResource("5_g6urq")]
+position = Vector2(1296, 321)
