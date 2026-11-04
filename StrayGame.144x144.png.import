@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddhxevacno4d8"
-path="res://.godot/imported/StrayGame.144x144.png-c6313f16d41dcd80d7ce653a42870135.ctex"
+uid="uid://gklgos80erml"
+path="res://.godot/imported/StrayGame.144x144.png-3c276a0f71d3bf2e076bd8563d5e40df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://StrayGame/StrayGame.144x144.png"
-dest_files=["res://.godot/imported/StrayGame.144x144.png-c6313f16d41dcd80d7ce653a42870135.ctex"]
+source_file="res://StrayGame.144x144.png"
+dest_files=["res://.godot/imported/StrayGame.144x144.png-3c276a0f71d3bf2e076bd8563d5e40df.ctex"]
 
 [params]
 
