@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://kccvv3216b28"]
+
+[ext_resource type="Script" uid="uid://d4di8mv17akh0" path="res://scripts/Hazards/chaser.gd" id="1_stew5"]
+[ext_resource type="SpriteFrames" uid="uid://84e5yt0d4sv6" path="res://art/tresFiles/Enemy1TMP.tres" id="4_r816d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7dc5"]
+size = Vector2(14, 14)
+
+[node name="Chaser" type="CharacterBody2D" unique_id=1668262057]
+scale = Vector2(3, 3)
+script = ExtResource("1_stew5")
+pause_off_screen = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=496828991]
+texture_filter = 1
+position = Vector2(0, -6)
+sprite_frames = ExtResource("4_r816d")
+animation = &"crouch"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2075002510]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_p7dc5")

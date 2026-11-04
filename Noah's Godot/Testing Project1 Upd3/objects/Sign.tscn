@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://codxqr3up451u"]
+
+[ext_resource type="Script" uid="uid://rmeif7clbdu" path="res://scripts/objects/sign.gd" id="1_iefu0"]
+
+[node name="Sign" type="Area2D" unique_id=1676584524]
+script = ExtResource("1_iefu0")

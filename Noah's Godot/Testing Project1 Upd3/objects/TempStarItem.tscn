@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b78e2rtqasi0x"]
+
+[ext_resource type="Script" uid="uid://dguai3vxq83l2" path="res://scripts/pickup.gd" id="1_kwijr"]
+[ext_resource type="Texture2D" uid="uid://5adwi8rf7sq7" path="res://art/TmpStarPOI.png" id="2_ldw50"]
+
+[node name="Star" type="Area2D" unique_id=1290609347]
+scale = Vector2(2, 2)
+script = ExtResource("1_kwijr")
+texture = ExtResource("2_ldw50")
+pickup_radius = 16.0

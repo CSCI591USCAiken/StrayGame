@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://cx2j1w1e01t6u"]
+
+[ext_resource type="Script" uid="uid://da67qipc5pse3" path="res://scripts/objects/respawn_anchor.gd" id="1_trh82"]
+[ext_resource type="Texture2D" uid="uid://36vyr1ty88no" path="res://art/Dimensional_Portal.webp" id="2_86tuk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7dc5"]
+resource_local_to_scene = true
+size = Vector2(32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w08ke"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k88hj"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7xxt"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp2nn"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mabo"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk23t"]
+atlas = ExtResource("2_86tuk")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p7dc5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w08ke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k88hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7xxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tp2nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mabo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk23t")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RespawnAnchor" type="Area2D" unique_id=323873660]
+script = ExtResource("1_trh82")
+active_animation = "default"
+inactive_animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=255044035]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_p7dc5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2098863204]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_p7dc5")
+frame_progress = 0.54308456

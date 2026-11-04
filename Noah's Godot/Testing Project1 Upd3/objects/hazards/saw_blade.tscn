@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c6ksa8j267nm1"]
+
+[ext_resource type="Script" uid="uid://bifsy3l23quje" path="res://scripts/Hazards/saw_blade.gd" id="1_jvcm0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a0cue"]
+radius = 27.2
+
+[node name="SawBlade" type="Area2D" unique_id=810793496]
+script = ExtResource("1_jvcm0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=405941726]
+position = Vector2(-5.2453665e-06, 120)
+shape = SubResource("CircleShape2D_a0cue")

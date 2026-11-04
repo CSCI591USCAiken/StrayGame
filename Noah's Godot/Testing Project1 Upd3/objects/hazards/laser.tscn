@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://d3xt2hh0ki44b"]
+
+[ext_resource type="Script" uid="uid://owxs67fny6d5" path="res://scripts/Hazards/laser.gd" id="1_jrugt"]
+
+[node name="Laser" type="Node2D" unique_id=1834967954]
+script = ExtResource("1_jrugt")
