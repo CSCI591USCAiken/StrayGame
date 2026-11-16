@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://cf3jccqu3xg7l" path="res://otter/otter_run_3.png" id="26_v3cmi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xypg8"]
-size = Vector2(79, 77)
+size = Vector2(79, 4.0625114)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xypg8"]
 animations = [{
@@ -136,7 +136,7 @@ animations = [{
 script = ExtResource("1_3wthr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=288653555]
-position = Vector2(-0.5, 2.5)
+scale = Vector2(1, 11.640002)
 shape = SubResource("RectangleShape2D_xypg8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1811080990]

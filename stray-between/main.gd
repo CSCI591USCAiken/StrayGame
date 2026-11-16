@@ -3,7 +3,8 @@ extends Node2D # Attached to the root node of your main scene
 # 1. PUT THE ARRAY HERE (Top of the script)
 const CHARACTER_SCENES: Array[PackedScene] = [
 	preload("res://11_5_f.tscn"),
-	preload("res://11_5_o.tscn")
+	preload("res://11_5_o.tscn"),
+	preload("res://11_5_c.tscn")
 ]
 
 # Optional: Drag a Marker2D node here in the Inspector to set the spawn location
