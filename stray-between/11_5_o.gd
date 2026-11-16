@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -400.0
 const AFK_TIMEOUT = 5.0
 const wall_jump_velocity = Vector2(-400, -300)
 const wall_pushback_force = 200.0
-const wall_gravity = 100.0
+const wall_gravity = 1600.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var afk_timer = 0.0

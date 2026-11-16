@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -400.0
 const AFK_TIMEOUT = 5.0
 const wall_jump_velocity = Vector2(-400, -300)
 const wall_pushback_force = 200.0
-const wall_gravity = 100.0
+const wall_gravity = 1600.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var afk_timer = 0.0
@@ -48,7 +48,10 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	if not is_on_floor():
-		$AnimatedSprite2D.play("jump")
+		if is_on_wall() and velocity.y > 0:
+			$AnimatedSprite2D.play("fall")
+		else:
+			$AnimatedSprite2D.play("jump")
 	elif velocity.x == 0:
 		if afk_timer >= AFK_TIMEOUT:
 			$AnimatedSprite2D.play("idlRest")

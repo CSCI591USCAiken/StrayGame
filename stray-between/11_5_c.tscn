@@ -5,6 +5,22 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xypg8"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xie0l"]
+atlas = ExtResource("2_hxsgf")
+region = Rect2(3, 2695, 19, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxsgf"]
+atlas = ExtResource("2_hxsgf")
+region = Rect2(35, 2695, 19, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xy4nn"]
+atlas = ExtResource("2_hxsgf")
+region = Rect2(67, 2695, 19, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8plhg"]
+atlas = ExtResource("2_hxsgf")
+region = Rect2(99, 2695, 19, 22)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rtppw"]
 atlas = ExtResource("2_hxsgf")
 region = Rect2(5, 112, 23, 16)
@@ -129,6 +145,23 @@ region = Rect2(101, 1264, 23, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_xie0l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxsgf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xy4nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8plhg")
+}],
+"loop": 1,
+"name": &"fall",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_rtppw")
 }, {
 "duration": 1.0,
@@ -249,7 +282,6 @@ shape = SubResource("RectangleShape2D_xypg8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=94924849]
 sprite_frames = SubResource("SpriteFrames_xypg8")
-animation = &"jump"
+animation = &"fall"
 autoplay = "idle"
-frame = 5
-frame_progress = 0.8419736
+frame_progress = 0.47891408
