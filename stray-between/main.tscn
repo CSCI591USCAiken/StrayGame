@@ -1,8 +1,7 @@
 [gd_scene format=4 uid="uid://d3i37wnqdtseu"]
 
-[ext_resource type="PackedScene" uid="uid://baomxknejexwo" path="res://11_5_f.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://qqeanrjo7ejd" path="res://main.gd" id="1_1slqb"]
 [ext_resource type="Texture2D" uid="uid://ckgwxr753xp6o" path="res://labyrinth-tiles-v2/no-background/0.png" id="2_0wkqm"]
-[ext_resource type="Script" uid="uid://om4w8onfmqhy" path="res://11_5_f.gd" id="2_ve5sr"]
 [ext_resource type="Texture2D" uid="uid://dug3unw86v6j4" path="res://labyrinth-tiles-v2/no-background/0@2x.png" id="3_ve5sr"]
 [ext_resource type="Texture2D" uid="uid://dvlm21y1k6epn" path="res://labyrinth-tiles-v2/no-background/5-NE@2x.png" id="4_5s44m"]
 [ext_resource type="Texture2D" uid="uid://lbnbykqvdkaw" path="res://labyrinth-tiles-v2/no-background/127@2x.png" id="5_ibca3"]
@@ -3690,12 +3689,9 @@ size = Vector2(18.5, 205)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibca3"]
 size = Vector2(38, 657)
 
-[node name="Main" type="Node2D" unique_id=1483043186]
-
-[node name="11-5-F" parent="." unique_id=2022520122 instance=ExtResource("1_ig7tw")]
-position = Vector2(56.000008, 590)
-scale = Vector2(0.3, 0.3)
-script = ExtResource("2_ve5sr")
+[node name="Main" type="Node2D" unique_id=1483043186 node_paths=PackedStringArray("spawn_point")]
+script = ExtResource("1_1slqb")
+spawn_point = NodePath("spawn")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=193215884]
 physics_material_override = SubResource("PhysicsMaterial_2wx1o")
@@ -3789,3 +3785,7 @@ visible = false
 position = Vector2(1443, -504)
 scale = Vector2(2, 2)
 texture = ExtResource("147_5s44m")
+
+[node name="spawn" type="Marker2D" parent="." unique_id=1300210005]
+position = Vector2(65, 562)
+scale = Vector2(-0.6573868, 1.2236328)
