@@ -285,3 +285,5 @@ sprite_frames = SubResource("SpriteFrames_xypg8")
 animation = &"fall"
 autoplay = "idle"
 frame_progress = 0.47891408
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1980796302]
