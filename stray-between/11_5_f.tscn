@@ -369,5 +369,3 @@ scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_xypg8")
 animation = &"idle"
 autoplay = "idle"
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1604945909]
