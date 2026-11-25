@@ -6,9 +6,9 @@ extends Node2D # Attached to the root node of your main scene
 
 # 1. QUADRANT CHARACTER ARRAYS
 const QUAD_TOP_LEFT: Array[PackedScene] = [
-	preload("res://11_5_f.tscn"),
+	preload("res://11-5-frog.tscn"),
 	preload("res://11_5_o.tscn"),
-	preload("res://11_5_c.tscn")
+	preload("res://11_5_q.tscn")
 ]
 
 const QUAD_TOP_RIGHT: Array[PackedScene] = [
@@ -37,6 +37,7 @@ const QUAD_BOTTOM_RIGHT: Array[PackedScene] = [
 @export var center_bottom_right: Marker2D
 
 @onready var camera: Camera2D = $Camera2D
+@onready var end_screen: CanvasLayer = $EndScreen
 
 var current_player: CharacterBody2D = null
 var current_quadrant: String = ""
@@ -48,6 +49,11 @@ func _ready() -> void:
 	# Automatically figure out which quadrant spawn_point starts in
 	current_quadrant = _get_quadrant_at(start_pos)
 	_apply_quadrant_instant(current_quadrant, start_pos)
+	end_screen.hide()
+
+func _on_end_trigger_body_entered(body: Node2D):
+	if body == current_player:
+		end_screen.show()
 
 func _process(_delta: float) -> void:
 	if not is_instance_valid(current_player):
